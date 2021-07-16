@@ -1,0 +1,26 @@
+1. git pull 
+to ensure you are currently up to date
+
+2. git checkout -b new_branch
+create a new feature branch to add your code 
+
+3. git add & git commit
+add and commit until ready to push to github
+
+4. git checkout master
+5. git pull 
+go back to the local master branch and pull from the remote
+repository to ensure the master is up to date (incase changes were made from someone else)
+Now the local master is up to date with the remote master branch
+
+6. git checkout new_branch
+7. git rebase master
+from new_branch, change the anchor of new_branch to the fully up to date master branch
+solve conflicts if nessecary
+
+8. git checkout master
+9. git rebase new_branch
+from master, complete the rebase process. Now the local master has all the changes
+you made and is ready to be pushed.
+
+10. git push
